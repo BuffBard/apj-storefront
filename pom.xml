@@ -8,11 +8,12 @@
         <version>3.5.11</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example</groupId>
+    <groupId>edu.byui.apj.storefront</groupId>
     <artifactId>parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>apj-storefront</name>
     <description>apj-storefront</description>
+    <packaging>pom</packaging>
     <url/>
     <licenses>
         <license/>
