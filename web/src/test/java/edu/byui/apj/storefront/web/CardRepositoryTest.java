@@ -1,7 +1,7 @@
 package edu.byui.apj.storefront.web;
 
 import edu.byui.apj.storefront.web.model.Card;
-import edu.byui.apj.storefront.web.service.CardService;
+import edu.byui.apj.storefront.web.service.WebCardService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -21,11 +21,11 @@ import static org.junit.jupiter.api.Assertions.*;
 class CardRepositoryTest {
 
     @Autowired
-    CardService service;
+    WebCardService service;
 
     @Test
     void featured_hasJava() {
-        List<Card> featured = service.getFeaturedCards(null);
+        List<Card> featured = service.getFeatured(null);
         assertNotNull(featured, "Featured list should not be null");
 
         boolean anyJava = featured.stream().anyMatch(c ->
